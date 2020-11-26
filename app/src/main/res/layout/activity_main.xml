@@ -19,24 +19,35 @@
     　３好きなサイズ
     android:paddingLeft="10dp"・・・左に余白
     android:gravity="center_vertical"・・・レイアウトの上下中央に配置-->
-    <TextView
-        android:id="@+id/task1"
+    <CheckBox
+        android:id="@+id/checkBox3"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="task1"
-        android:textSize="22sp"
-        android:paddingLeft="10dp"
-        android:gravity="center_vertical"/>
+        android:text="task1" />
 
-    <TextView
-        android:id="@+id/task2"
+    <CheckBox
+        android:id="@+id/checkBox4"
         android:layout_width="match_parent"
         android:layout_height="50dp"
-        android:text="task2"
-        android:textSize="22sp"
-        android:paddingLeft="10dp"
-        android:gravity="center_vertical"/>
+        android:text="task2" />
 
+    <CheckBox
+        android:id="@+id/checkBox5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="task3" />
+
+    <CheckBox
+        android:id="@+id/checkBox6"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="task4" />
+
+    <CheckBox
+        android:id="@+id/checkBox"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="task5" />
 
 
 </LinearLayout>
