@@ -1310,12 +1310,11 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
-id checkBox
+id checkBox1
+id checkBox2
 id checkBox3
 id checkBox4
 id checkBox5
-id checkBox6
-id checkBox7
 id checkbox
 id checked
 id chronometer
