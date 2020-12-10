@@ -5,6 +5,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
@@ -49,11 +50,12 @@
         android:layout_height="50dp"
         android:text="task5" />
 
-    <com.google.android.material.textfield.TextInputLayout
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </com.google.android.material.textfield.TextInputLayout>
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/ic_launcher_background" />
 
 
 </LinearLayout>

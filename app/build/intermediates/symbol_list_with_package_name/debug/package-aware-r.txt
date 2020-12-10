@@ -1366,6 +1366,7 @@ id fill_vertical
 id filled
 id fixed
 id flip
+id floatingActionButton01
 id forever
 id ghost_view
 id gone
@@ -1391,6 +1392,7 @@ id jumpToStart
 id labeled
 id largeLabel
 id layout
+id layout1
 id left
 id line1
 id line3
