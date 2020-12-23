@@ -1304,12 +1304,14 @@ id beginning
 id blocking
 id bottom
 id bounce
+id button
 id buttonPanel
 id center
 id center_horizontal
 id center_vertical
 id chain
 id chains
+id checkBox0
 id checkBox1
 id checkBox2
 id checkBox3
@@ -1353,6 +1355,7 @@ id dragUp
 id easeIn
 id easeInOut
 id easeOut
+id editText
 id edit_query
 id end
 id enterAlways
@@ -1366,7 +1369,6 @@ id fill_vertical
 id filled
 id fixed
 id flip
-id floatingActionButton01
 id forever
 id ghost_view
 id gone
@@ -1392,7 +1394,6 @@ id jumpToStart
 id labeled
 id largeLabel
 id layout
-id layout1
 id left
 id line1
 id line3

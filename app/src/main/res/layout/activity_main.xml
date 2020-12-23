@@ -1,62 +1,66 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!--リニアレイアウト・・・レイアウトを縦（横）に並べる-->
-<!--android:orientation="vertical"・・・縦に並べる-->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
 
-    <!--TextView
-    android:id="@+id/hoge"・・・TextViewにid(名前)をつける
-    android:layout_width ・・・幅
-    android:layout_height・・・高さ
-    　１match_parent・・・親要素の高さ、幅
-    　２wrap_content・・・余白なしのぴったり
-    　３好きなサイズ
-    android:paddingLeft="10dp"・・・左に余白
-    android:gravity="center_vertical"・・・レイアウトの上下中央に配置-->
-    <CheckBox
-        android:id="@+id/checkBox1"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="task1" />
+        android:layout_height="match_parent">
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="task2" />
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Button" />
 
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="task3" />
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Name" />
 
-    <CheckBox
-        android:id="@+id/checkBox4"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="task4" />
+        <CheckBox
+            android:id="@+id/checkBox0"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CheckBox" />
 
-    <CheckBox
-        android:id="@+id/checkBox5"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="task5" />
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CheckBox" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:srcCompat="@drawable/ic_launcher_background" />
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CheckBox" />
+
+        <CheckBox
+            android:id="@+id/checkBox5"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="CheckBox" />
 
 
-</LinearLayout>
-
+    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

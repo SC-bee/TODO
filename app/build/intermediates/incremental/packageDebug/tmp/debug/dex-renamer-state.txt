@@ -1,4 +1,4 @@
-#Thu Dec 10 10:51:19 JST 2020
+#Wed Dec 23 13:29:18 JST 2020
 base.0=/Users/kohamakaito/AndroidStudioProjects/TODO/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex
