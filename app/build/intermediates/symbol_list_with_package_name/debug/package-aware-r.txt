@@ -1317,6 +1317,10 @@ id checkBox2
 id checkBox3
 id checkBox4
 id checkBox5
+id checkBox6
+id checkBox7
+id checkBox8
+id checkBox9
 id checkbox
 id checked
 id chronometer
