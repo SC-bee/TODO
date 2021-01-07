@@ -10,6 +10,8 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -29,67 +31,112 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        button = findViewById(R.id.button);
-        editText = findViewById(R.id.editText);
-
-        checkBoxes[0] = findViewById(R.id.checkBox0);
-        yList[0] = 200;
-        checkBoxes[1] = findViewById(R.id.checkBox1);
-        yList[1] = 300;
-        checkBoxes[2] = findViewById(R.id.checkBox2);
-        yList[2] = 400;
-        checkBoxes[3] = findViewById(R.id.checkBox3);
-        yList[3] = 500;
-        checkBoxes[4] = findViewById(R.id.checkBox4);
-        yList[4] = 600;
-        checkBoxes[5] = findViewById(R.id.checkBox5);
-        yList[5] = 700;
-        checkBoxes[6] = findViewById(R.id.checkBox6);
-        yList[6] = 800;
-        checkBoxes[7] = findViewById(R.id.checkBox7);
-        yList[7] = 900;
-        checkBoxes[8] = findViewById(R.id.checkBox8);
-        yList[8] = 1100;
-        checkBoxes[9] = findViewById(R.id.checkBox9);
-        yList[9] = 1100;
+        final Button makeTaskButton = (Button) findViewById(R.id.myButton);
+        final Button removeTaskButton = (Button) findViewById(R.id.removeButton);
+        final EditText editText = (EditText) findViewById(R.id.editText);
+        final TableLayout table = (TableLayout) findViewById(R.id.myTable);
 
 
-        // ディスプレイのサイズを取得
-        WindowManager wm = getWindowManager();
-        Display display = wm.getDefaultDisplay();
-        Point size = new Point();
-        display.getSize(size);
-        screenWidth = size.x;
-        screenHeight = size.y;
-
-
-        // オブジェクトの初期位置の設定
-        button.setX(screenWidth - 220f);
-        button.setY(50f);
-        editText.setX(80f);
-        editText.setY(50f);
-        checkBoxes[0].setY(-100f);
-        checkBoxes[1].setY(-100f);
-        checkBoxes[2].setY(-100f);
-        checkBoxes[3].setY(-100f);
-        checkBoxes[4].setY(-100f);
-        checkBoxes[5].setY(-100f);
-        checkBoxes[6].setY(-100f);
-        checkBoxes[7].setY(-100f);
-        checkBoxes[8].setY(-100f);
-        checkBoxes[9].setY(-100f);
-
-
-
-        // ここからボタンを押したときの処理
-        button.setOnClickListener(new View.OnClickListener() {
+        makeTaskButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v) {
-                checkBoxes[num].setText(editText.getText());
-                checkBoxes[num].setY(yList[num]);
-                num += 1;
+            public void onClick(View v)
+            {
+                makeTask(v);
+                editText.getEditableText().clear();
             }
         });
+
+
+        removeTaskButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v)
+            {
+                table.removeAllViewsInLayout();
+
+            }});
+
+
+
+//        button = findViewById(R.id.button);
+//        editText = findViewById(R.id.editText);
+//
+//        checkBoxes[0] = findViewById(R.id.checkBox0);
+//        yList[0] = 200;
+//        checkBoxes[1] = findViewById(R.id.checkBox1);
+//        yList[1] = 300;
+//        checkBoxes[2] = findViewById(R.id.checkBox2);
+//        yList[2] = 400;
+//        checkBoxes[3] = findViewById(R.id.checkBox3);
+//        yList[3] = 500;
+//        checkBoxes[4] = findViewById(R.id.checkBox4);
+//        yList[4] = 600;
+//        checkBoxes[5] = findViewById(R.id.checkBox5);
+//        yList[5] = 700;
+//        checkBoxes[6] = findViewById(R.id.checkBox6);
+//        yList[6] = 800;
+//        checkBoxes[7] = findViewById(R.id.checkBox7);
+//        yList[7] = 900;
+//        checkBoxes[8] = findViewById(R.id.checkBox8);
+//        yList[8] = 1100;
+//        checkBoxes[9] = findViewById(R.id.checkBox9);
+//        yList[9] = 1100;
+//
+//
+//        // ディスプレイのサイズを取得
+//        WindowManager wm = getWindowManager();
+//        Display display = wm.getDefaultDisplay();
+//        Point size = new Point();
+//        display.getSize(size);
+//        screenWidth = size.x;
+//        screenHeight = size.y;
+//
+//
+//        // オブジェクトの初期位置の設定
+//        button.setX(screenWidth - 220f);
+//        button.setY(50f);
+//        editText.setX(80f);
+//        editText.setY(50f);
+//        checkBoxes[0].setY(-100f);
+//        checkBoxes[1].setY(-100f);
+//        checkBoxes[2].setY(-100f);
+//        checkBoxes[3].setY(-100f);
+//        checkBoxes[4].setY(-100f);
+//        checkBoxes[5].setY(-100f);
+//        checkBoxes[6].setY(-100f);
+//        checkBoxes[7].setY(-100f);
+//        checkBoxes[8].setY(-100f);
+//        checkBoxes[9].setY(-100f);
+//
+//
+//
+//        // ここからボタンを押したときの処理
+//        button.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                checkBoxes[num].setText(editText.getText());
+//                checkBoxes[num].setY(yList[num]);
+//                num += 1;
+//            }
+//        });
+
+
+
+
+    }
+
+
+    public void makeTask(View view) {
+        // Do something in response to button
+        TableLayout table = (TableLayout) findViewById(R.id.myTable);
+        TableRow row = new TableRow(this);
+        CheckBox chk = new CheckBox(this);
+
+        EditText editText = (EditText) findViewById(R.id.editText);
+        String message = editText.getText().toString();
+
+        chk.setText(message);
+        row.addView(chk);
+        table.addView(row);
 
     }
 }

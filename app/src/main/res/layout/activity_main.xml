@@ -7,86 +7,145 @@
     android:background="#FFFFFF"
     tools:context=".MainActivity">
 
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+<!--    <FrameLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent">-->
 
-        <Button
-            android:id="@+id/button"
+<!--        <Button-->
+<!--            android:id="@+id/button"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="Button" />-->
+
+<!--        <EditText-->
+<!--            android:id="@+id/editText"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:ems="10"-->
+<!--            android:inputType="textPersonName"-->
+<!--            android:text="Name" />-->
+
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBox0"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="CheckBox" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBox1"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="CheckBox" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBox2"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="CheckBox" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBox3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="CheckBox" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBox4"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="CheckBox" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBox5"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="CheckBox" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBox6"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="CheckBox" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBox7"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="CheckBox" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBox8"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="CheckBox" />-->
+
+<!--        <CheckBox-->
+<!--            android:id="@+id/checkBox9"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="50dp"-->
+<!--            android:text="CheckBox" />-->
+
+<!--    </FrameLayout>-->
+
+    <Button
+        android:id="@+id/myButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:onClick="makeTask"
+        android:text="@string/make"
+        app:layout_constraintBaseline_toBaselineOf="@+id/editText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/edit_message"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/myButton"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="519dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginLeft="5dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TableLayout
+            android:id="@+id/myTable"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Button" />
-
-        <EditText
-            android:id="@+id/editText"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:layout_height="fill_parent" />
+    </LinearLayout>
 
 
-        <CheckBox
-            android:id="@+id/checkBox0"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox1"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox2"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox3"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox4"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox5"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox6"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox7"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox8"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="CheckBox" />
-
-        <CheckBox
-            android:id="@+id/checkBox9"
-            android:layout_width="match_parent"
-            android:layout_height="50dp"
-            android:text="CheckBox" />
-
-
-    </FrameLayout>
+    <Button
+        android:id="@+id/removeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="16dp"
+        android:text="delete"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
