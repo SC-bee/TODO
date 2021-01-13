@@ -15,4 +15,5 @@
 
     <string name="edit_message">追加するタスクを入力</string>
     <string name="make">作成</string>
+    <string name="gomi" />
 </resources>
