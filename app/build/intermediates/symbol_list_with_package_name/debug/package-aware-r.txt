@@ -1194,6 +1194,7 @@ drawable design_ic_visibility
 drawable design_ic_visibility_off
 drawable design_password_eye
 drawable design_snackbar_background
+drawable gomi
 drawable ic_launcher_background
 drawable ic_launcher_foreground
 drawable ic_mtrl_chip_checked_black
@@ -1310,11 +1311,6 @@ id center_horizontal
 id center_vertical
 id chain
 id chains
-id checkBox1
-id checkBox2
-id checkBox3
-id checkBox4
-id checkBox5
 id checkbox
 id checked
 id chronometer
@@ -1353,6 +1349,7 @@ id dragUp
 id easeIn
 id easeInOut
 id easeOut
+id editText
 id edit_query
 id end
 id enterAlways
@@ -1366,9 +1363,9 @@ id fill_vertical
 id filled
 id fixed
 id flip
-id floatingActionButton01
 id forever
 id ghost_view
+id gomi
 id gone
 id graph
 id graph_wrap
@@ -1392,11 +1389,11 @@ id jumpToStart
 id labeled
 id largeLabel
 id layout
-id layout1
 id left
 id line1
 id line3
 id linear
+id linearLayout
 id listMode
 id list_item
 id masked
@@ -1407,6 +1404,8 @@ id motion_base
 id mtrl_child_content_container
 id mtrl_internal_children_alpha_tag
 id multiply
+id myButton
+id myTable
 id nav_controller_view_tag
 id nav_graph
 id navigation_header_container
@@ -1436,6 +1435,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id removeButton
 id reverseSawtooth
 id right
 id right_icon
@@ -1655,12 +1655,15 @@ string appbar_scrolling_view_behavior
 string bottom_sheet_behavior
 string character_counter_content_description
 string character_counter_pattern
+string edit_message
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
 string first_fragment_label
+string gomi
 string hello_first_fragment
 string hello_second_fragment
 string hide_bottom_view_on_scroll_behavior
+string make
 string mtrl_chip_close_icon_content_description
 string nav_app_bar_navigate_up_description
 string nav_app_bar_open_drawer_description

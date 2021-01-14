@@ -1,62 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<!--リニアレイアウト・・・レイアウトを縦（横）に並べる-->
-<!--android:orientation="vertical"・・・縦に並べる-->
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/layout1"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
 
-    <!--TextView
-    android:id="@+id/hoge"・・・TextViewにid(名前)をつける
-    android:layout_width ・・・幅
-    android:layout_height・・・高さ
-    　１match_parent・・・親要素の高さ、幅
-    　２wrap_content・・・余白なしのぴったり
-    　３好きなサイズ
-    android:paddingLeft="10dp"・・・左に余白
-    android:gravity="center_vertical"・・・レイアウトの上下中央に配置-->
-    <CheckBox
-        android:id="@+id/checkBox1"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="task1" />
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-    <CheckBox
-        android:id="@+id/checkBox2"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="task2" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal">
 
-    <CheckBox
-        android:id="@+id/checkBox3"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="task3" />
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="16dp"
+                android:ems="10"
+                android:hint="@string/edit_message"
+                android:inputType="textPersonName"
+                app:layout_constraintEnd_toStartOf="@+id/myButton"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
 
-    <CheckBox
-        android:id="@+id/checkBox4"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="task4" />
+            <Button
+                android:id="@+id/myButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="12dp"
+                android:onClick="makeTask"
+                android:text="@string/make" />
+        </LinearLayout>
 
-    <CheckBox
-        android:id="@+id/checkBox5"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:text="task5" />
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="0dp">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/floatingActionButton"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:srcCompat="@drawable/ic_launcher_background" />
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:id="@+id/myTable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+        <Button
+            android:id="@+id/removeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="32dp"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="16dp"
+            android:text="delete"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
 
 
-</LinearLayout>
+    </LinearLayout>
 
+
+</androidx.constraintlayout.widget.ConstraintLayout>
