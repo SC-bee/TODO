@@ -1617,7 +1617,8 @@ int layout select_dialog_item_material 0x7f0b0034
 int layout select_dialog_multichoice_material 0x7f0b0035
 int layout select_dialog_singlechoice_material 0x7f0b0036
 int layout support_simple_spinner_dropdown_item 0x7f0b0037
-int menu menu_main 0x7f0c0000
+int menu main_activity_actions 0x7f0c0000
+int menu menu_main 0x7f0c0001
 int mipmap ic_launcher 0x7f0d0000
 int mipmap ic_launcher_round 0x7f0d0001
 int navigation nav_graph 0x7f0e0000
