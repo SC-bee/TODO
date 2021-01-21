@@ -1,4 +1,7 @@
-#Thu Jan 21 10:31:24 JST 2021
-base.0=/Users/e195721/Documents/GitHub/TODO/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+#Thu Jan 14 10:31:14 JST 2021
+base.0=/Users/kohamakaito/AndroidStudioProjects/TODOのコピー/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.1=classes.dex
+renamed.1=classes2.dex
 path.0=classes.dex
 renamed.0=classes.dex
+base.1=/Users/kohamakaito/AndroidStudioProjects/TODO/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
