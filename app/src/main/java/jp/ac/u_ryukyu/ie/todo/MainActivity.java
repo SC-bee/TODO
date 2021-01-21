@@ -67,6 +67,7 @@ public class MainActivity extends AppCompatActivity {
         //chk.setTextSize(23);
         row.addView(chk);
         table.addView(row);
+
     }
 
 
