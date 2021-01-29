@@ -2,22 +2,13 @@ package jp.ac.u_ryukyu.ie.todo;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.ClipData;
-import android.graphics.Point;
 import android.os.Bundle;
-import android.view.Display;
-import android.view.Menu;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.TableLayout;
 import android.widget.TableRow;
-import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -85,8 +76,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }
     }
-
-
-
+    
 
 }
