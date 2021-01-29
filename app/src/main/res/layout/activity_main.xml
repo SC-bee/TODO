@@ -27,6 +27,7 @@
                 android:ems="10"
                 android:hint="@string/edit_message"
                 android:inputType="textPersonName"
+                android:textColorLink="#6EE6B9"
                 app:layout_constraintEnd_toStartOf="@+id/myButton"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
@@ -41,7 +42,7 @@
                 android:layout_marginTop="12dp"
 
 
-                android:background="#A600BCD4"
+                android:background="#6EE6B9"
                 android:foreground="@android:drawable/ic_menu_edit"
                 android:onClick="makeTask" />
 
