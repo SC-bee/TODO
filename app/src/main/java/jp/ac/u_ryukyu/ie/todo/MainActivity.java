@@ -47,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                deleteTask();
+                deleteTask(v);
             }});
 
     }
@@ -63,17 +63,17 @@ public class MainActivity extends AppCompatActivity {
         String message = editText.getText().toString();
 
         chk.setText(message);
-        //chk.setHeight(100);
-        //chk.setTextSize(23);
+        chk.setHeight(100);
+        chk.setTextSize(23);
         row.addView(chk);
         table.addView(row);
 
     }
 
 
-    public void deleteTask(){
+    public void deleteTask(View view){
         // DELETEボタンが押されたときの処理
-        TableLayout table = (TableLayout) new TableLayout(this);
+        TableLayout table =(TableLayout) findViewById(R.id.myTable);
         int num_row = table.getChildCount(); // tableレイアウト内の行(TableRow)の数を入手
         for(int i=0; i<num_row; i++){
             TableRow tr = (TableRow) table.getChildAt(i);  // tableの子はTableRow
@@ -86,19 +86,7 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case R.id.gomi:
-                deleteTask();
-                return true;
 
-            default:
-                // If we got here, the user's action was not recognized.
-                // Invoke the superclass to handle it.
-                return super.onOptionsItemSelected(item);
-        }
-    }
 
 
 }
